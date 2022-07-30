@@ -17,6 +17,8 @@ mod_download_modal_ui <- function(id) {
 
 #' download_modal Server Functions
 #'
+#' Module used for creating a modalDialog with a download button and options to customize the dataframe to be downloaded.
+#'
 #' @param id
 #' @param content_df reactive. A dataframe to download
 #' @param title character. The title of the modal
@@ -60,7 +62,8 @@ mod_download_modal_server <- function(id, content_df, title, size) {
     output$Download <- downloadHandler(
       filename = function() {
         input$file_title
-      }, content = function(file) {
+      },
+      content = function(file) {
         content_df() %>%
           readr::write_csv(file = file)
       }
