@@ -9,9 +9,11 @@ URL: https://github.com/jpdugo/jpdugoModulesforShiny
 BugReports: https://github.com/jpdugo/jpdugoModulesforShiny/issues
 Imports: 
     config (>= 0.3.1),
+    dplyr (>= 1.0.10),
     golem (>= 0.3.3),
     readr,
-    shiny (>= 1.7.2)
+    shiny (>= 1.7.2),
+    shinyWidgets
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

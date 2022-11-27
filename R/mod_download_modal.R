@@ -46,25 +46,25 @@ mod_download_modal_server <- function(id, content_df, title, size) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
     observeEvent(input$show_modal, {
-      modalDialog(
-        tagList(
-          textInput(ns("file_title"), "Enter the Title of the File")
-        ),
-        title = title,
-        size = size,
-        footer = downloadButton(ns("Download"), "Download"),
-        easyClose = TRUE
-      ) %>%
-        showModal()
+      showModal(
+        modalDialog(
+          tagList(
+            textInput(ns("file_title"), "Enter the Title of the File")
+          ),
+          title = title,
+          size = size,
+          footer = downloadButton(ns("download"), "Download"),
+          easyClose = TRUE
+        )
+      )
     })
 
-    output$Download <- downloadHandler(
+    output$download <- downloadHandler(
       filename = function() {
         input$file_title
       },
       content = function(file) {
-        content_df() %>%
-          readr::write_csv(file = file)
+        readr::write_csv(x = content_df(), file = file)
       }
     )
   })
