@@ -5,13 +5,11 @@
 #' @import shiny
 #' @noRd
 app_ui <- function(request) {
-  tagList(
+  fluidPage(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
       mod_download_modal_ui("download_modal_1")
-    )
   )
 }
 
