@@ -9,7 +9,8 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-      mod_download_modal_ui("download_modal_1")
+    h2("mod_download_modal"),
+    mod_download_modal_ui("download_modal_1")
   )
 }
 
