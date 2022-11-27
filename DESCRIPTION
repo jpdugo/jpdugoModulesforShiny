@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Juan", "Dugo", , "juanpatriciodugo@gmail.com", role = c("cre", "aut"))
 Description: Various modules.
-License: What license is it under?
+License: MIT + file LICENSE
 URL: https://github.com/jpdugo/jpdugoModulesforShiny
 BugReports: https://github.com/jpdugo/jpdugoModulesforShiny/issues
 Imports: 
