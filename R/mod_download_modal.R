@@ -19,9 +19,9 @@ mod_download_modal_ui <- function(id) {
 #' Module used for creating a modalDialog with a download button and options to customize the dataframe to be downloaded.
 #'
 #' @param id Internal parameters for {shiny}.
-#' @param content_df reactive. A dataframe to download
-#' @param title character. The title of the modal
-#' @param size character. The size of the modal
+#' @param content_df \code{reactive}. A dataframe to download
+#' @param title \code{character}. The title of the modal
+#' @param size \code{character}. The size of the modal
 #' @export
 #' @examples
 #' library(shiny)

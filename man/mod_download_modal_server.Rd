@@ -9,11 +9,11 @@ mod_download_modal_server(id, content_df, title, size)
 \arguments{
 \item{id}{Internal parameters for {shiny}.}
 
-\item{content_df}{reactive. A dataframe to download}
+\item{content_df}{\code{reactive}. A dataframe to download}
 
-\item{title}{character. The title of the modal}
+\item{title}{\code{character}. The title of the modal}
 
-\item{size}{character. The size of the modal}
+\item{size}{\code{character}. The size of the modal}
 }
 \description{
 Module used for creating a modalDialog with a download button and options to customize the dataframe to be downloaded.
