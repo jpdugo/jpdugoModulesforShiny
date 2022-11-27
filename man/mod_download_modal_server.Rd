@@ -7,6 +7,8 @@
 mod_download_modal_server(id, content_df, title, size)
 }
 \arguments{
+\item{id}{Internal parameters for {shiny}.}
+
 \item{content_df}{reactive. A dataframe to download}
 
 \item{title}{character. The title of the modal}

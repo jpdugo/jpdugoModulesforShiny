@@ -5,9 +5,8 @@
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
 #' @noRd
-#'
+#' @export
 #' @importFrom shiny NS tagList
-#' @import devtools
 mod_download_modal_ui <- function(id) {
   ns <- NS(id)
   tagList(
@@ -19,11 +18,11 @@ mod_download_modal_ui <- function(id) {
 #'
 #' Module used for creating a modalDialog with a download button and options to customize the dataframe to be downloaded.
 #'
-#' @param id
+#' @param id Internal parameters for {shiny}.
 #' @param content_df reactive. A dataframe to download
 #' @param title character. The title of the modal
 #' @param size character. The size of the modal
-#'
+#' @export
 #' @examples
 #' library(shiny)
 #'
