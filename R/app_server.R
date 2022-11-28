@@ -10,6 +10,6 @@ app_server <- function(input, output, session) {
     id         = "download_modal_1",
     content_df = reactive(iris),
     title      = "TITLE",
-    size       = "xl"
+    size       = "s"
   )
 }
